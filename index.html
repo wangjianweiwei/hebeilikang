@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>河北利康</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="bootstrap-3.4.1/css/bootstrap.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
+    <style>
+        h2 {
+            color: #409eff;
+        }
+
+        .logo {
+            margin-top: -15px;
+            height: inherit;
+            width: inherit;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #409eff;
+            background-color: transparent;
+        }
+
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        .img:hover {
+            transform: scale(1.15);
+        }
+
+        .footer {
+            background: #0068BD;
+            position: relative;
+            padding-top: 106px;
+        }
+
+
+        dt {
+            font-size: 16px;
+            font-weight: 600;
+            color: #FFFFFF;
+            line-height: 30px;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        dl {
+            margin: 0 30px
+        }
+
+        dd {
+            margin-bottom: 10px;
+            color: #ffffff;
+            opacity: 0.5;
+        }
+
+        dt::after {
+            content: "";
+            width: 17px;
+            height: 2px;
+            background: #FFFFFF;
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+        }
+
+        .footer-copy {
+            padding: 25px 80px;
+            border-top: 1px solid rgb(255, 255, 255, 0.21);
+            text-align: center;
+        }
+
+        .navbar-nav {
+            float: none;
+            text-align: center;
+        }
+
+        @media (min-width: 968px) {
+            ul.nav.navbar-nav li {
+                float: none;
+                display: inline-block;
+                margin: 0em;
+            }
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div style="font-size: 16px">
+    <nav class="navbar navbar-default navbar-static-top navbar-fixed-top" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="logo" alt="Brand" src="images/logo.png">
+            </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">关于我们 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/html/about.html">企业简介</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">企业文化</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">发展历程</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">企业荣誉</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">新闻中心 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">企业动态</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">媒体报道</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">解决方案 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">医用气体工程解决方案</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">医用气体设备解决方案</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">医院洁净手术部解决方案</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">产品中心 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">医用制氧设备</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">医用真空机组</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">医用空气机组</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">医用气体汇流排</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">售后服务 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">服务承诺</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">加入我们 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">招聘信息</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">员工风采</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">人才理念</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div style="margin-top: 50px">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-bottom: 0">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <!--            <li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+            <!--            <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="/images/125.jpg" alt="...">
+                <div class="carousel-caption">
+                    <h1>医用气体整体解决方案专家</h1>
+                    <p>Medical gas overall solution expert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <h2 class="headline title">企业文化<small>
+        Product</small></h2>
+
+    <div class="row" style="text-align: center;line-height: 39px">
+        <div class="col-lg-12">
+            <img class="img-circle"
+                 src="http://t14.baidu.com/it/u=1187729862,4163744880&fm=224&app=112&f=JPEG?w=350&h=350&s=94BCC0321B8076CC50BF60D10300C0EA"
+                 alt="Generic placeholder image" width="140" height="140">
+            <h3>企业质量观</h3>
+            <p>产品就是人品，质量就是生命</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-12">
+            <img class="img-circle"
+                 src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fi-1.lanrentuku.com%2F2020%2F11%2F8%2F672ef01e-e529-4c0b-9faa-8131b844f6c7.png%3FimageView2%2F2%2Fw%2F500&refer=http%3A%2F%2Fi-1.lanrentuku.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652164156&t=2f92c6371542a50bfffaaa5c58849250"
+                 alt="Generic placeholder image" width="140" height="140">
+            <h3>企业核心理念</h3>
+            <p>专注 专一 专业
+                专注-汇聚所有力量，像激光一样穿透成功路上的障碍，直到胜利终点。
+                专一-专心致力于医院专项工程，心无旁骛。
+                专业-因为专注、因为专一、所以专业。</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-12">
+            <img class="img-circle"
+                 src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcdn.woocommerce-app.com%2Fwp-content%2Fuploads%2F2020%2F02%2Fcooperation.png&refer=http%3A%2F%2Fcdn.woocommerce-app.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652165716&t=66ab1abaf5cfd833ae5e0d4c80f9cbad"
+                 alt="Generic placeholder image" width="140" height="140">
+            <h3>企业发展理念</h3>
+            <p>坚持诚信崇尚竞争赢得业绩完善服务
+                坚持诚信 崇尚竞争 赢得业绩 完善服务
+                诚信是人的立身之本，是企业生存之本；
+                直面残酷的竞争现实，敢于迎接挑战，进攻是最好的防御；
+                业绩是营销永远追求的目标，是企业发展的标志，是《坚持诚信、崇尚竞年》的必然结果;
+                营销的最高境界是为客户提供专业完善的服务。</p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <h2 class="headline title">产品中心<small>
+        Product</small></h2>
+
+    <div class="row featurette">
+        <div class="col-md-5 col-md-offset-1">
+            <h2 class="featurette-heading">医用空气压缩机组</h2>
+            <div class="transition-left">
+                <p class="lead">采用先进的涡轮式, 活塞式, 干式螺杆空气压缩机集成, 做到全无油设计</p>
+                <p class="lead">具备先进的智能化, 信息化控制系统</p>
+                <p class="lead">撬装式安装, 占地面积小, 安装灵活快捷</p>
+                <p class="lead">具备二类医疗器械注册证, 确保医用安全</p>
+                <p class="lead">根据医院使用要求进行订单式设计, 满足不同理化指标要求</p>
+                <p class="lead">整套机组采用多用多路设计, 确保在单一故障时, 能连续供气</p>
+            </div>
+
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" alt="医用空气机组"
+                 src="/images/医用空气机组/主视图.jpg"
+                 data-holder-rendered="true">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto"
+                 alt="500x500"
+                 src="/images/医用真空机组/主视图.jpg"
+                 data-holder-rendered="true">
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+            <h2 class="featurette-heading">医用真空机组</h2>
+            <div class="transition-left">
+                <p class="lead">选用知名品牌真空泵</p>
+                <p class="lead">设计流量大</p>
+                <p class="lead">设计流量大可根据需求配备多个真空泵</p>
+                <p class="lead">真空泵可定制</p>
+                <p class="lead">智能控制系统</p>
+                <p class="lead">占地面积小</p>
+                <p class="lead">医用安全</p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5 col-md-offset-1">
+            <h2 class="featurette-heading">医用分子筛制氧设备</h2>
+            <div class="transition-left">
+                <p class="lead">整套设备全无油设计, 超低压运行, 安全性高</p>
+                <p class="lead">配备了数字智慧化"大脑"的制氧设备</p>
+                <p class="lead">工艺先进, 配备高端, 制氧高效, 节能突出, 故障率低</p>
+            </div>
+
+
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto"
+                 alt="500x500"
+                 src="/images/医用空气机组/主视图.jpg"
+                 data-holder-rendered="true">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+</div><!-- /.container -->
+<footer class="footer">
+    <div class="row" style="padding: 0;margin: 0">
+        <div style="padding: 0 80px 68px 80px;display: flex;justify-content: space-between">
+            <div class="col-md-3 col-xs-13">
+                <div style="font-weight: bold;color: #ffffff">
+                    <p>电话: </p>
+                    <p>0318-2329090</p>
+                    <p>邮箱: </p>
+                    <p>hebeiyangyuan@163.com</p>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12" style="display: flex">
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd>企业简介</dd>
+                    <dd>企业文化</dd>
+                    <dd>发展历程</dd>
+                    <dd>发展历程</dd>
+                </dl>
+                <dl>
+                    <dt>新闻中心</dt>
+                    <dd>企业动态</dd>
+                    <dd>媒体报道</dd>
+                </dl>
+                <dl>
+                    <dt>解决方案</dt>
+                    <dd>医用气体工程解决方案</dd>
+                    <dd>医用气体设备解决方案</dd>
+                    <dd>医院洁净手术部解决方案</dd>
+                </dl>
+                <dl>
+                    <dt>产品中心</dt>
+                    <dd>医用制氧设备</dd>
+                    <dd>医用真空机组</dd>
+                    <dd>医用空气机组</dd>
+                    <dd>医用气体汇流排</dd>
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd>服务承诺</dd>
+                </dl>
+                <dl>
+                    <dt>加入我们</dt>
+                    <dd>招聘信息</dd>
+                    <dd>员工风采</dd>
+                    <dd>人才理念</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding: 0;margin: 0">
+        <div class="footer-copy">
+            <p style="color:#FFFFFF">河北金利康科技有限公司 版权所有 | <a style="color:#FFFFFF" target="_blank"
+                                                           href="https://beian.miit.gov.cn/#/Integrated/index">冀ICP备123456789号-1</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="jquery.min.js"></script>
+<script src="bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<script src="scrollreveal.js"></script>
+<script>
+    let option = {delay: 2, distance: "50px", duration: 1500, interval: 3, reset: true, origin: "top"}
+    ScrollReveal().reveal('.headline', option);
+    ScrollReveal().reveal('.transition-left', {
+        delay: 1,
+        distance: "120px",
+        duration: 2000,
+        interval: 0.8,
+        reset: true,
+        origin: "left"
+    });
+
+    $(function () {
+        $(".dropdown").mouseover(function () {
+            $(this).addClass("open");
+        });
+        $(".dropdown").mouseleave(function () {
+            $(this).removeClass("open");
+        })
+    })
+</script>
+</body>
+</html>

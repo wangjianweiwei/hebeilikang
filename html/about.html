@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>河北利康</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../bootstrap-3.4.1/css/bootstrap.min.css">
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        h2 {
+            color: #409eff;
+        }
+
+        .product {
+            transition: 0.5s;
+        }
+
+        .product:hover {
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .caption:hover {
+            background-color: #409eff;
+            color: white;
+        }
+
+        .logo {
+            margin-top: -15px;
+            height: inherit;
+            width: inherit;
+        }
+
+        .timeline-steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .timeline-steps .timeline-step {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin: 1rem
+        }
+
+        @media (min-width: 768px) {
+            .timeline-steps .timeline-step:not(:last-child):after {
+                content: "";
+                display: block;
+                border-top: .25rem dotted #3b82f6;
+                width: 3.46rem;
+                position: absolute;
+                left: 7.5rem;
+                top: .3125rem
+            }
+
+            .timeline-steps .timeline-step:not(:first-child):before {
+                content: "";
+                display: block;
+                border-top: .25rem dotted #3b82f6;
+                width: 3.8125rem;
+                position: absolute;
+                right: 7.5rem;
+                top: .3125rem
+            }
+        }
+
+        .timeline-steps .timeline-content {
+            width: 10rem;
+            text-align: center
+        }
+
+        .timeline-steps .timeline-content .inner-circle {
+            border-radius: 1.5rem;
+            height: 1rem;
+            width: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3b82f6
+        }
+
+        .timeline-steps .timeline-content .inner-circle:before {
+            content: "";
+            background-color: #3b82f6;
+            display: inline-block;
+            height: 3rem;
+            width: 3rem;
+            min-width: 3rem;
+            border-radius: 6.25rem;
+            opacity: .5
+        }
+
+    </style>
+</head>
+<body>
+<div class="container-fluid" style="padding: 0">
+    <div class="row" style="margin: 0;padding: 0">
+        <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo" alt="Brand" src="/hebeilikang/images/logo.png">
+                </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/hebeilikang/index.html"><strong>首页</strong></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">关于我们 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/hebeilikang/html/about.html">企业简介</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">企业文化</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">发展历程</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">企业荣誉</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">新闻中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">企业动态</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">媒体报道</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">解决方案 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">医用气体工程解决方案</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">医用气体设备解决方案</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">医院洁净手术部解决方案</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">产品中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">医用制氧设备</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">医用真空机组</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">医用空气机组</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">医用气体汇流排</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">售后服务 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">服务承诺</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">加入我们 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">招聘信息</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">员工风采</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">人才理念</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="GuanYuWoMen" class="row" style="margin: 0;padding: 0">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2 class="headline" style="text-align: center;margin-top: 100px">关于我们<small> About
+                us</small></h2>
+            <div class="row"
+                 style="margin-top: 55px;font-size: 16px;line-height: 42px;background-color: #2aabd2;padding: 40px 20px;color: whitesmoke">
+                <p style="text-indent: 2em"><strong>河北金利康科技集团有限公司</strong>，创立于2002年是一家为医疗机构提供医用气体工程、医用气体设备、医用洁净手术部工程整体解决方案的科技集团公司，公司通过十几年的发展，业务范围从初单一的医用气体工程施工，发展成为今天集空气净化工程、医用气体工程、医用制氧设备的研发、生产、销售于一体的高科技集团公司。河北金利康科技集团公司注册资金6080万元，现集团公司在省会石家庄设立了研发中心、营销中心，在全国设立了13家分公司，6个售后服务站。生产基地建在冀州市，可以更好地依托冀州市全国医疗器械生产基地的研发、生产优势。截止到今年，公司已经先后为全国近千家大中型医院或医疗机构提供了医用制氧设备、手术室净化工程、医用气体工程的整体解决方案
+                </p>
+                <p style="text-indent: 2em;margin-top: 55px">
+                    <strong>河北金利康科技集团有限公司</strong>，是一家为医疗机构提供医用气体工程、医用气体设备、医院洁净手术部工程整体解决方案的科技集团公司。公司注册资金6080万元，在全国省会级城市设有13家办事处、6家售后服务机构。公司自2002年成立以来，已经先后为全国近干家医院，提供了医用制气设备、医用气体工程以及手术室净化工程的整体解决方案。公司是中国气体协会医用气体及工程分会的副会长单位;中国气体协会医用气体及工程分会河北省医用气体研究中心、河南省研究中心副主任单位；全国卫生产业企业管理协会医院建筑工程装备分会副会长单位；中国医学装备协会医用洁净装备工程分会理事单位；中国医学装备协会医用气体装备及工程分会会员单位：国家科技部火炬计划高新技术企业；AAA
+                    级重合同守信用单位；AAA 级诚信经营示范单位；AAA
+                    级质量服务信誉企业。金利康科技集团与北京筑医台学院联合成立了北京筑医台学院金利康医用气体分院，专业为我国医疗机构提供医用气体系统的规划、设计、建设施工、检验验收、运行维护等线上、线下的教育培训与咨询服务
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="FaZhanLiCheng" class="row" style="margin: 0;padding: 0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h2 class="headline" style="text-align: center;margin-top: 100px">发展历程<small> About
+                us</small></h2>
+            <div class="row" style="margin-top: 55px;font-size: 16px;line-height: 42px">
+                <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle"></div>
+                            <p class="h5 mt-3 mb-1">2002 起航</p>
+                            <p class="h5 text-muted mb-0 mb-lg-0">
+                                2002年，正式注册公司进入到医用气体工程安装行业，是当时省内第一家从事医用气体的专业厂家，同时，进入“金利康”医用制氧设备开发“</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle"></div>
+                            <p class="h5 mt-3 mb-1">2004 中流击水</p>
+                            <p class="h5 text-muted mb-0 mb-lg-0">“金利康”第一代
+                                医用制氧机问世，
+                                同年取得医疗器械注册证，进入市场。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle"></div>
+                            <p class="h5 mt-3 mb-1">2009 乘风破浪</p>
+                            <p class="h5 text-muted mb-0 mb-lg-0">“金利康”第二代四塔
+                                制氧设备研发成功，
+                                开创了国内“多塔”制氧技术先河。制氧机故障率更低，更有保障。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-content">
+                            <div class="inner-circle"></div>
+                            <p class="h5 mt-3 mb-1">2020 勇立潮头</p>
+                            <p class="h5 text-muted mb-0 mb-lg-0">研发成功第三代“数字
+                                智能化制氧设备，整套设备无油运行，设备更高效，更节能，更安全。
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div id="ZiZhiZhengMing" class="row" style="margin: 0;padding: 0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h2 class="headline" style="text-align: center;margin-top: 100px">资质证明<small> Qualification</small></h2>
+            <div class="row" style="margin-top: 55px;text-align: center;font-size: 14px">
+                <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                    <div class="thumbnail">
+                        <img src="../images/图片3.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div class="row" style="margin: 0;padding: 0">
+        <div class="col-sm-12"
+             style="background-color: #409eff;color: white;text-align: center;padding: 15px;vertical-align: middle">
+            <p>Copyright © 2022 河北利康 All rights reserved. 赣ICP备11005027号</p>
+        </div>
+    </div>
+</div>
+
+
+<script src="../jquery.min.js"></script>
+<script src="../bootstrap-3.4.1/js/bootstrap.min.js"></script>
+
+<script src="../scrollreveal.js"></script>
+<script>
+    let option = {delay: 2, distance: "50px", duration: 1500, interval: 3, reset: true, origin: "top"}
+    ScrollReveal().reveal('.headline', option);
+</script>
+</body>
+</html>
